@@ -82,7 +82,7 @@ public class TitlePage extends AppCompatActivity {
     }
 
 
-    //вкл/выкл звука при сворачивание и разворачивание экрана
+    // switch on and off sound after close and open app
     @Override
     protected void onResume() {
         super.onResume();
@@ -96,7 +96,7 @@ public class TitlePage extends AppCompatActivity {
     }
 
 
-    // кнопка запуска основной рабочей активности
+    // start button for main activity. with sound intent
     private void runActivity() {
         ImageButton playButton = findViewById(R.id.play_button);
 
@@ -111,7 +111,7 @@ public class TitlePage extends AppCompatActivity {
     }
 
 
-    //кнопка вкл/выкл звука. завязана на логическую переменную. ее и отслеживает
+    //кнопка вкл/выкл звука. завязана на логическую переменную. ее и отслеживает sound button is connected with boolean soundStatus. here we watching for it
 
     public void soundButtonStatus() {
 

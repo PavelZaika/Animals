@@ -109,7 +109,7 @@ public class HeadImgFragment extends Fragment {
                     case R.id.star_line_42:
                         starFourTwo.setVisibility(View.INVISIBLE);
                         starTwoThree.setVisibility(View.VISIBLE);
-                        starOneOne.setVisibility(View.VISIBLE);  //подключаем звезду 11, которая делает чейндж имедж
+                        starOneOne.setVisibility(View.VISIBLE);  //switching on star 11, which change img
                         break;
                     case R.id.star_line_43:
                         starFourThree.setVisibility(View.INVISIBLE);
@@ -142,7 +142,7 @@ public class HeadImgFragment extends Fragment {
         starFourFour.setOnClickListener(onClickListenerStars);
     }
 
-    private void changeImg() { // клик по объекту для смены животины
+    private void changeImg() { // click for change img
 
 
         final ImageView headAnimals = getView().findViewById(R.id.img_with_Animals);
@@ -151,7 +151,7 @@ public class HeadImgFragment extends Fragment {
 
         headAnimals.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { // клик по объекту для смены животины
+            public void onClick(View view) { // click for change img
 
 
                 int[] mainImg = {R.drawable.panda, R.drawable.dog, R.drawable.hipo};
@@ -167,12 +167,12 @@ public class HeadImgFragment extends Fragment {
         });
     }
 
-    private void motionImg(ImageView view) { // анимация для объекта. прописана в xml
+    private void motionImg(ImageView view) { // animation for object. configured in xml
         Animation startRotateAnimation = AnimationUtils.loadAnimation(getContext(), R.anim.translate_img);
         view.startAnimation(startRotateAnimation);
     }
 
-    @SuppressLint("ClickableViewAccessibility")   //свайп экрана для смены фона
+    @SuppressLint("ClickableViewAccessibility")   //swipe screen for changing background
     private void changeBackground() {
 
         final ConstraintLayout constraintLayout = getView().findViewById(R.id.head_img_layout);
@@ -180,7 +180,7 @@ public class HeadImgFragment extends Fragment {
         constraintLayout.setOnTouchListener(new OnSwipeTouchListener(getActivity()) {
 
             public void onSwipeLeft() {
-                //обработка свайпа влево
+                //left swipe
                 int randBackImj = (int) Math.floor(Math.random() * backgroundImg.length);
 
              //   constraintLayout.setBackgroundColor(backgroundImg[randBackImj]);
@@ -189,7 +189,7 @@ public class HeadImgFragment extends Fragment {
             }
 
             public void onSwipeRight() {
-                //обработка свайпа вправо
+                //right swipe
                 int randBackImj = (int) Math.floor(Math.random() * backgroundImg.length);
               //  constraintLayout.setBackgroundColor(backgroundImg[randBackImj]);
                 constraintLayout.setBackgroundResource(backgroundImg[randBackImj]);

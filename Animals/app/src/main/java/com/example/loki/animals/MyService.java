@@ -20,7 +20,7 @@ public class MyService extends Service {
         Toast.makeText(this, R.string.MyServiceCreated, Toast.LENGTH_LONG).show();
 
         player = MediaPlayer.create(this, R.raw.mus);
-        player.setLooping(true); // зацикливаем
+        player.setLooping(true); // loop
     }
 
 

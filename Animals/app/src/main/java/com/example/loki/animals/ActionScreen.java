@@ -31,7 +31,7 @@ public class ActionScreen extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        soundActionScreen = intent.getBooleanExtra("soundStatus", true); //получаем состояние звука из заглавной активности и присваиваем переменной
+        soundActionScreen = intent.getBooleanExtra("soundStatus", true); //sound status
 
 
     }
@@ -88,7 +88,7 @@ public class ActionScreen extends AppCompatActivity {
 
 
     @Override
-    protected void onResume() { //проверяем статус переменной при восстановлении приложения, что бы вернуть состояние звука в выбранное состояние.
+    protected void onResume() { //check status of sound after replay app
         super.onResume();
 
         if (soundActionScreen) {
