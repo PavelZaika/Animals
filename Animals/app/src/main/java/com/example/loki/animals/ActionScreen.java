@@ -17,12 +17,20 @@ public class ActionScreen extends AppCompatActivity {
 
 
 
+
+    private int currentApiVersion1; // del it
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.action_screen);
 
         hideBarAndNavigation();
+
+
 
 //fragment manger
         HeadImgFragment imgFragment = new HeadImgFragment();
