@@ -15,14 +15,6 @@ public class ActionScreen extends AppCompatActivity {
     public boolean soundActionScreen;
     private int currentApiVersion;
 
-
-
-
-    private int currentApiVersion1; // del it
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
