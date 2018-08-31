@@ -15,6 +15,8 @@ public class ActionScreen extends AppCompatActivity {
     public boolean soundActionScreen;
     private int currentApiVersion;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,7 @@ public class ActionScreen extends AppCompatActivity {
 
         hideBarAndNavigation();
 
-//фрагмент менеджер
+//fragment manger
         HeadImgFragment imgFragment = new HeadImgFragment();
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
