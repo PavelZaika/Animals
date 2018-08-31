@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Funny Animals</string>
+    <string name="txt_screen_1">Тестовый Экран 1</string>
+    <string name="txt_screen_2">Тестовый Экран 2</string>
+    <string name="txt_screen_3">Тестовый Экран 3</string>
+    <string name="txt_screen_4">Тестовый Экран 4</string>
+    <string name="MyServiceCreated">My Service Created</string>
+    <string name="MyServiceStopped">My Service Stopped</string>
+    <string name="MyServiceStarted">My Service Started</string>
+
+
+    <string-array name="arrayWithImg">
+        <item>circle</item>
+        <item>square</item>
+        <item>triangle</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_action_screen_new_release">ActionScreenNewRelease</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="todo">TODO</string>
+
+</resources>
