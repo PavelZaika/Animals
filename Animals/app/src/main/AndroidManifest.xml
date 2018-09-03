@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:screenOrientation="portrait">
+       >
 
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,11 +24,15 @@
         </activity>
 
 
-        <activity android:name=".TitlePage">
+        <activity android:name=".TitlePage"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden">
 
         </activity>
         <activity android:name=".ActionScreen"
-                  android:theme="@style/AppTheme"/>
+                  android:theme="@style/AppTheme"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden"/>
 
         <service
             android:name=".MyService"
