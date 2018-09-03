@@ -2,7 +2,6 @@ package com.example.loki.animals;
 
 
 import android.annotation.SuppressLint;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -19,7 +18,7 @@ import android.widget.Toast;
 public class HeadImgFragment extends Fragment {
 
 
-    public int[] backgroundImg = {R.drawable.one_back, R.drawable.two_back, R.drawable.thirteen_back, R.drawable.four_back, R.drawable.five_back, R.drawable.six_back,
+    public final int[] backgroundImg = {R.drawable.one_back, R.drawable.two_back, R.drawable.thirteen_back, R.drawable.four_back, R.drawable.five_back, R.drawable.six_back,
             R.drawable.seven_back, R.drawable.eight_back, R.drawable.nine_back, R.drawable.ten_back, R.drawable.eleven_back, R.drawable.twelve_back, R.drawable.thirteen_back,
             R.drawable.fourteen_back, R.drawable.fifteen_back, R.drawable.sixteen_back, R.drawable.seventeen_back, R.drawable.eighteen_back, R.drawable.nineteen_back, R.drawable.twenty_back,
             R.drawable.twenty_one_back, R.drawable.twenty_two_back, R.drawable.twenty_three_back, R.drawable.twenty_four_back, R.drawable.twenty_five_back, R.drawable.twenty_six_back,

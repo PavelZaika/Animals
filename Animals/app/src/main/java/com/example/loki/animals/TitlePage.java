@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 
 public class TitlePage extends AppCompatActivity {
-    public boolean soundStatus = true;
+    private boolean soundStatus = true;
     private int currentApiVersion;
 
     @Override
@@ -113,7 +113,7 @@ public class TitlePage extends AppCompatActivity {
 
     //кнопка вкл/выкл звука. завязана на логическую переменную. ее и отслеживает sound button is connected with boolean soundStatus. here we watching for it
 
-    public void soundButtonStatus() {
+    private void soundButtonStatus() {
 
         final ImageButton muteOff = findViewById(R.id.soundOff);
         muteOff.setOnClickListener(new View.OnClickListener() {
