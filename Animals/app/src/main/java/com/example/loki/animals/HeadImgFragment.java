@@ -158,7 +158,7 @@ public class HeadImgFragment extends Fragment {
 
                 headAnimals.setImageResource(mainImg[randImj]);
 
-                Toast.makeText(getContext(), "DoneImj", Toast.LENGTH_SHORT).show();
+        //        Toast.makeText(getContext(), "DoneImj", Toast.LENGTH_SHORT).show();
 
                 motionImg(headAnimals);
 
@@ -184,7 +184,7 @@ public class HeadImgFragment extends Fragment {
 
              //   constraintLayout.setBackgroundColor(backgroundImg[randBackImj]);
                 constraintLayout.setBackgroundResource(backgroundImg[randBackImj]);
-                Toast.makeText(getContext(), "left"+randBackImj, Toast.LENGTH_SHORT).show();
+    //            Toast.makeText(getContext(), "left"+randBackImj, Toast.LENGTH_SHORT).show();
             }
 
             public void onSwipeRight() {
@@ -192,7 +192,7 @@ public class HeadImgFragment extends Fragment {
                 int randBackImj = (int) Math.floor(Math.random() * backgroundImg.length);
               //  constraintLayout.setBackgroundColor(backgroundImg[randBackImj]);
                 constraintLayout.setBackgroundResource(backgroundImg[randBackImj]);
-                Toast.makeText(getContext(), "right"+randBackImj, Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getContext(), "right"+randBackImj, Toast.LENGTH_SHORT).show();
             }
         });
 

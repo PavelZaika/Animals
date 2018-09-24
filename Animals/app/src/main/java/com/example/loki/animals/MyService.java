@@ -17,7 +17,7 @@ public class MyService extends Service {
 
     @Override
     public void onCreate() {
-        Toast.makeText(this, R.string.MyServiceCreated, Toast.LENGTH_LONG).show();
+    //    Toast.makeText(this, R.string.MyServiceCreated, Toast.LENGTH_LONG).show();
 
         player = MediaPlayer.create(this, R.raw.mus);
         player.setLooping(true); // loop
@@ -27,7 +27,7 @@ public class MyService extends Service {
 
     @Override
     public void onDestroy() {
-        Toast.makeText(this, R.string.MyServiceStopped, Toast.LENGTH_LONG).show();
+    //    Toast.makeText(this, R.string.MyServiceStopped, Toast.LENGTH_LONG).show();
         player.stop();
     }
 
@@ -35,7 +35,7 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Toast.makeText(this, R.string.MyServiceStarted, Toast.LENGTH_LONG).show();
+    //    Toast.makeText(this, R.string.MyServiceStarted, Toast.LENGTH_LONG).show();
         player.start();
         return super.onStartCommand(intent, flags, startId);
     }
