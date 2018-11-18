@@ -19,6 +19,7 @@ public class TitlePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title_page);
         startService(new Intent(this, MyService.class));
+        
 
 
         hideBarAndNavigation();
