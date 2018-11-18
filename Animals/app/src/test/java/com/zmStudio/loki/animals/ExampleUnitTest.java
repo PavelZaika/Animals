@@ -1,4 +1,4 @@
-package com.example.loki.animals;
+package com.zmStudio.loki.animals;
 
 import org.junit.Test;
 
